@@ -1,0 +1,8 @@
+<?php
+
+$name = $_GET["fName"];
+$number = $_GET["number"];
+
+echo "Hello $name , your number is $number";
+
+?>

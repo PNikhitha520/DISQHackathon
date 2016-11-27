@@ -1,33 +1,29 @@
 <html>
-<head></head>
-<body bgcolor="gold" font-color="red">
- 
-<table border='0' width='480px' cellpadding='0' cellspacing='0' align='center'>
-<center><tr>
-   <td><h1>Form for techincal</h1></td>
-</tr><center>
- 
-<table border='0' width='480px' cellpadding='0' cellspacing='0' align='center'>
-<tr>
-    <td align='center'>Name of the event</td>
-    <td><input type='text' name='name'></td>
-</tr>
-<tr> <td>&nbsp;</td> </tr>
-<tr>
-    <td align='center'>Timings</td>
-    <td><input type='text' name='name'></td>
-</tr>
-<tr> <td>&nbsp;</td> </tr>
-<tr>
-    <td align='center'>Location</td>
-    <td><input type='text' name='name'></td>
-</tr>
-<tr> <td>&nbsp;</td> </tr>
+<head>
+<title>Form Example</title>
+<script LANGUAGE="JavaScript">
+function display() {
+DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=300,height=200')
+message = "<ul><li><b>NAME: </b>" + document.form1.yourname.value;
+message += "<li><b>ADDRESS: </b>" + document.form1.address.value;
+message += "<li><b>PHONE: </b>" + document.form1.phone.value + "</ul>";
+DispWin.document.write(message);
+}
+</script>
+</head>
+<body bgcolor="#FFA233">
+<center>
+<h1>TechnicalForm</h1>
+Enter the following information.
+<form name="form1">
+<p><b>Nameoftechnicalevent:</b> <input TYPE="TEXT" SIZE="20" NAME="yourname">
+</p>
+<p><b>Location:</b> <input TYPE="TEXT" SIZE="30" NAME="address">
 
-<table border='0' cellpadding='0' cellspacing='0' width='480px' align='center'>
-<tr>
-    <td align='center'><input type='submit' name='SAVE ' value="SAVE"></td>
- <td align='center'><input type='submit' name='RESET ' value="RESET"></td>
-</tr>
-</table>
-</table>
+</p>
+<p><b>Timings: </b> <input TYPE="TEXT" SIZE="15" NAME="phone">
+</p>
+<p><input TYPE="BUTTON" VALUE="UPDATE" onClick="display();"></p>
+</form></center>
+</body>
+</html>
