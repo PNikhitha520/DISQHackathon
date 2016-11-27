@@ -1,0 +1,4 @@
+<?php
+$fname=$_POST['first_name'];
+echo $fname;
+?>
